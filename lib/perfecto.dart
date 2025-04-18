@@ -1,15 +1,15 @@
 class Perfecto {
-  int n;
+  int numero;
 
-  Perfecto(this.n);
+  Perfecto( this.numero );
 
   bool esPerfecto(){
-    int s=0, d;
-    for(d=1; d< n; d++){
-      if(n%d==0){
-        s=s+d;
+    int suma = 0, divisor;
+    for( divisor = 1; divisor < numero ; divisor++ ){
+      if( numero % divisor == 0 ){
+        suma = suma + divisor;
       }
     }
-    return s==n;
+    return suma == numero;
   }
 }
